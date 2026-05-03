@@ -17,11 +17,16 @@
     <div class="nav-container">
       <a href="#hero" class="nav-logo">LRHA</a>
       <ul class="nav-links">
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#services">Servicios</a></li>
-        <li><a href="#skills">Herramientas</a></li>
-        <li><a href="#contact" class="nav-cta">Contacto</a></li>
+        <li><a href="#about"    data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="#services" data-i18n="nav.services">Servicios</a></li>
+        <li><a href="#skills"   data-i18n="nav.skills">Herramientas</a></li>
+        <li><a href="#contact"  data-i18n="nav.contact" class="nav-cta">Contacto</a></li>
       </ul>
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button class="lang-btn active" data-lang="es" aria-pressed="true">ES</button>
+        <button class="lang-btn"        data-lang="fr" aria-pressed="false">FR</button>
+        <button class="lang-btn"        data-lang="en" aria-pressed="false">EN</button>
+      </div>
       <button class="nav-toggle" id="navToggle" aria-label="Menú">
         <span></span><span></span><span></span>
       </button>
@@ -32,10 +37,11 @@
   <section class="hero" id="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
-      <p class="hero-eyebrow">Consultoría Ambiental · Hidrogeología</p>
+      <p class="hero-eyebrow" data-i18n="hero.eyebrow">Consultoría Ambiental · Hidrogeología</p>
       <h1 class="hero-name">Luis R. Hernández Angulo</h1>
-      <p class="hero-title">Doctor en Ciencias de la Tierra y el Ambiente<br>
-        <span>Modelación de Recursos Hídricos</span>
+      <p class="hero-title">
+        <span data-i18n="hero.degree">Doctor en Ciencias de la Tierra y el Ambiente</span><br>
+        <span class="hero-specialty" data-i18n="hero.specialty">Modelación de Recursos Hídricos</span>
       </p>
       <div class="hero-links">
         <a href="https://orcid.org/0000-0002-2041-1726" target="_blank" rel="noopener" class="badge badge-orcid">
@@ -47,51 +53,38 @@
           LinkedIn
         </a>
       </div>
-      <a href="#contact" class="hero-btn">Solicitar consultoría</a>
+      <a href="#contact" class="hero-btn" data-i18n="hero.btn">Solicitar consultoría</a>
     </div>
-    <div class="hero-scroll">
-      <span>↓</span>
-    </div>
+    <div class="hero-scroll"><span>↓</span></div>
   </section>
 
   <!-- ── ABOUT ──────────────────────────────────────────────── -->
   <section class="section about" id="about">
     <div class="container">
-      <div class="section-label">Perfil</div>
-      <h2 class="section-title">Sobre mí</h2>
+      <div class="section-label" data-i18n="about.label">Perfil</div>
+      <h2 class="section-title"  data-i18n="about.title">Sobre mí</h2>
       <div class="about-grid">
         <div class="about-text">
-          <p>
-            Soy ingeniero ambiental y sanitario con maestría en ingeniería ambiental y doctorado
-            en Ciencias de la Tierra y el Ambiente (Université Grenoble Alpes, 2025),
-            especializado en <strong>hidrogeología</strong> y modelación del recurso hídrico.
-          </p>
-          <p>
-            A lo largo de mi carrera he trabajado en modelación de calidad del agua superficial
-            y subterránea, transporte de contaminantes, gestión ambiental de proyectos mineros y
-            docencia universitaria en programas de postgrado.
-          </p>
-          <p>
-            Actualmente resido en Francia y ofrezco servicios de consultoría a distancia para
-            clientes en América Latina y Europa.
-          </p>
+          <p data-i18n-html="about.p1">Soy ingeniero ambiental y sanitario con maestría en ingeniería ambiental y doctorado en Ciencias de la Tierra y el Ambiente (Université Grenoble Alpes, 2025), especializado en <strong>hidrogeología</strong> y modelación del recurso hídrico.</p>
+          <p data-i18n="about.p2">A lo largo de mi carrera he trabajado en modelación de calidad del agua superficial y subterránea, transporte de contaminantes, gestión ambiental de proyectos mineros y docencia universitaria en programas de postgrado.</p>
+          <p data-i18n="about.p3">Actualmente resido en Francia y ofrezco servicios de consultoría a distancia para clientes en América Latina y Europa.</p>
         </div>
         <div class="about-stats">
           <div class="stat-card">
             <span class="stat-num">10+</span>
-            <span class="stat-label">Años de experiencia</span>
+            <span class="stat-label" data-i18n="about.stat1">Años de experiencia</span>
           </div>
           <div class="stat-card">
             <span class="stat-num">PhD</span>
-            <span class="stat-label">Université Grenoble Alpes</span>
+            <span class="stat-label" data-i18n="about.stat2">Université Grenoble Alpes</span>
           </div>
           <div class="stat-card">
             <span class="stat-num">3</span>
-            <span class="stat-label">Idiomas de trabajo</span>
+            <span class="stat-label" data-i18n="about.stat3">Idiomas de trabajo</span>
           </div>
           <div class="stat-card">
             <span class="stat-num">🌍</span>
-            <span class="stat-label">Consultoría remota</span>
+            <span class="stat-label" data-i18n="about.stat4">Consultoría remota</span>
           </div>
         </div>
       </div>
@@ -101,55 +94,55 @@
   <!-- ── SERVICES ───────────────────────────────────────────── -->
   <section class="section services" id="services">
     <div class="container">
-      <div class="section-label">Servicios</div>
-      <h2 class="section-title">Consultorías</h2>
-      <p class="section-sub">Soluciones basadas en modelación numérica para la gestión integral del recurso hídrico.</p>
+      <div class="section-label" data-i18n="services.label">Servicios</div>
+      <h2 class="section-title"  data-i18n="services.title">Consultorías</h2>
+      <p class="section-sub"     data-i18n="services.sub">Soluciones basadas en modelación numérica para la gestión integral del recurso hídrico.</p>
       <div class="services-grid">
 
         <div class="service-card">
           <div class="service-icon">
             <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 48 Q16 32 24 40 Q32 48 40 32 Q48 16 56 24"/><path d="M8 56 Q16 40 24 48 Q32 56 40 40 Q48 24 56 32"/><line x1="8" y1="12" x2="8" y2="56"/><line x1="8" y1="56" x2="56" y2="56"/></svg>
           </div>
-          <h3>Modelación Hidrológica e Hidráulica</h3>
-          <p>Simulación de cuencas hidrográficas, caudales, inundaciones y comportamiento hidráulico de ríos y canales.</p>
+          <h3 data-i18n="s1.title">Modelación Hidrológica e Hidráulica</h3>
+          <p  data-i18n="s1.desc">Simulación de cuencas hidrográficas, caudales, inundaciones y comportamiento hidráulico de ríos y canales.</p>
         </div>
 
         <div class="service-card">
           <div class="service-icon">
             <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><circle cx="32" cy="32" r="20"/><path d="M12 32 Q20 24 32 32 Q44 40 52 32"/><path d="M12 32 Q20 40 32 32 Q44 24 52 32"/></svg>
           </div>
-          <h3>Calidad del Agua Superficial</h3>
-          <p>Modelación de contaminantes, oxígeno disuelto, nutrientes y parámetros fisicoquímicos en ríos y cuerpos de agua.</p>
+          <h3 data-i18n="s2.title">Calidad del Agua Superficial</h3>
+          <p  data-i18n="s2.desc">Modelación de contaminantes, oxígeno disuelto, nutrientes y parámetros fisicoquímicos en ríos y cuerpos de agua.</p>
         </div>
 
         <div class="service-card">
           <div class="service-icon">
             <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 56 L20 20 L32 36 L44 16 L56 32"/><path d="M8 56 L56 56"/><circle cx="20" cy="20" r="3" fill="currentColor" stroke="none"/><circle cx="44" cy="16" r="3" fill="currentColor" stroke="none"/></svg>
           </div>
-          <h3>Erosión, Sedimentos y Depósito</h3>
-          <p>Modelación del transporte de sedimentos, erosión hídrica y dinámica morfológica en cuencas y cauces fluviales.</p>
+          <h3 data-i18n="s3.title">Erosión, Sedimentos y Depósito</h3>
+          <p  data-i18n="s3.desc">Modelación del transporte de sedimentos, erosión hídrica y dinámica morfológica en cuencas y cauces fluviales.</p>
         </div>
 
         <div class="service-card">
           <div class="service-icon">
             <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="8" width="48" height="12" rx="2"/><path d="M12 20 L12 56"/><path d="M52 20 L52 56"/><path d="M12 56 L52 56"/><path d="M20 28 Q32 36 44 28"/><path d="M20 40 Q32 48 44 40"/></svg>
           </div>
-          <h3>Flujos Subterráneos</h3>
-          <p>Modelación de acuíferos, recarga, niveles piezométricos y dirección de flujo en medios saturados y no saturados.</p>
+          <h3 data-i18n="s4.title">Flujos Subterráneos</h3>
+          <p  data-i18n="s4.desc">Modelación de acuíferos, recarga, niveles piezométricos y dirección de flujo en medios saturados y no saturados.</p>
         </div>
 
         <div class="service-card">
           <div class="service-icon">
             <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><circle cx="20" cy="20" r="6"/><circle cx="44" cy="44" r="6"/><circle cx="44" cy="20" r="4"/><circle cx="20" cy="44" r="4"/><path d="M20 26 L20 38 M26 20 L38 20 M20 44 L44 44 M44 26 L44 38"/></svg>
           </div>
-          <h3>Transferencia de Masa en Medios Porosos</h3>
-          <p>Simulación del transporte de solutos, contaminantes y trazadores en acuíferos y suelos no saturados.</p>
+          <h3 data-i18n="s5.title">Transferencia de Masa en Medios Porosos</h3>
+          <p  data-i18n="s5.desc">Simulación del transporte de solutos, contaminantes y trazadores en acuíferos y suelos no saturados.</p>
         </div>
 
         <div class="service-card service-card--cta">
-          <h3>¿Tiene un proyecto específico?</h3>
-          <p>Cuénteme sus necesidades y diseñamos juntos una solución a la medida de su proyecto.</p>
-          <a href="#contact" class="service-btn">Escribirme</a>
+          <h3 data-i18n="s6.title">¿Tiene un proyecto específico?</h3>
+          <p  data-i18n="s6.desc">Cuénteme sus necesidades y diseñamos juntos una solución a la medida de su proyecto.</p>
+          <a href="#contact" class="service-btn" data-i18n="s6.btn">Escribirme</a>
         </div>
 
       </div>
@@ -159,12 +152,12 @@
   <!-- ── SKILLS ─────────────────────────────────────────────── -->
   <section class="section skills" id="skills">
     <div class="container">
-      <div class="section-label">Herramientas</div>
-      <h2 class="section-title">Software y Modelos</h2>
+      <div class="section-label" data-i18n="skills.label">Herramientas</div>
+      <h2 class="section-title"  data-i18n="skills.title">Software y Modelos</h2>
       <div class="skills-groups">
 
         <div class="skill-group">
-          <h4>Aguas Subterráneas</h4>
+          <h4 data-i18n="skills.g1">Aguas Subterráneas</h4>
           <ul>
             <li>Visual MODFLOW</li>
             <li>FEFLOW</li>
@@ -173,7 +166,7 @@
         </div>
 
         <div class="skill-group">
-          <h4>Calidad del Agua</h4>
+          <h4 data-i18n="skills.g2">Calidad del Agua</h4>
           <ul>
             <li>WASP – EPA</li>
             <li>QUAL2k – EPA</li>
@@ -182,7 +175,7 @@
         </div>
 
         <div class="skill-group">
-          <h4>Calidad del Aire</h4>
+          <h4 data-i18n="skills.g3">Calidad del Aire</h4>
           <ul>
             <li>AERMOD</li>
             <li>HYSPLIT</li>
@@ -191,7 +184,7 @@
         </div>
 
         <div class="skill-group">
-          <h4>Programación</h4>
+          <h4 data-i18n="skills.g4">Programación</h4>
           <ul>
             <li>Python</li>
             <li>R / Stata</li>
@@ -200,7 +193,7 @@
         </div>
 
         <div class="skill-group">
-          <h4>SIG</h4>
+          <h4 data-i18n="skills.g5">SIG</h4>
           <ul>
             <li>QGIS</li>
             <li>ArcGIS</li>
@@ -214,9 +207,9 @@
   <!-- ── CONTACT ────────────────────────────────────────────── -->
   <section class="section contact" id="contact">
     <div class="container">
-      <div class="section-label">Contacto</div>
-      <h2 class="section-title">Hablemos</h2>
-      <p class="section-sub">Disponible para proyectos de consultoría en América Latina y Europa.</p>
+      <div class="section-label" data-i18n="contact.label">Contacto</div>
+      <h2 class="section-title"  data-i18n="contact.title">Hablemos</h2>
+      <p class="section-sub"     data-i18n="contact.sub">Disponible para proyectos de consultoría en América Latina y Europa.</p>
       <div class="contact-cards">
         <a href="mailto:luisrobertohernandezangulo2012@gmail.com" class="contact-card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
@@ -237,18 +230,18 @@
   <!-- ── FOOTER ─────────────────────────────────────────────── -->
   <footer class="footer">
     <div class="container">
-      <p>© 2025 Luis Roberto Hernández Angulo · Grenoble, Francia</p>
+      <p data-i18n="footer.text">© 2025 Luis Roberto Hernández Angulo · Grenoble, Francia</p>
     </div>
   </footer>
 
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.js"></script>
   <script>
-    // Sticky navbar on scroll
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
       navbar.classList.toggle('scrolled', window.scrollY > 60);
     });
 
-    // Mobile menu toggle
     const toggle = document.getElementById('navToggle');
     const navLinks = document.querySelector('.nav-links');
     toggle.addEventListener('click', () => {
@@ -256,7 +249,6 @@
       toggle.classList.toggle('active');
     });
 
-    // Close menu on link click
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('open');

@@ -107,6 +107,38 @@ img { display: block; max-width: 100%; }
 }
 .nav-cta:hover { background: #13948b !important; }
 
+/* ── LANG SWITCHER ────────────────────────────────────────── */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  margin-inline-start: auto;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.3);
+  color: rgba(255,255,255,.7);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  padding: .3rem .55rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+  font-family: var(--ff-body);
+}
+.lang-btn:hover {
+  background: rgba(255,255,255,.12);
+  color: var(--white);
+  border-color: rgba(255,255,255,.5);
+}
+.lang-btn.active {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: var(--white);
+}
+
 .nav-toggle { display: none; }
 
 /* ── HERO ─────────────────────────────────────────────────── */
@@ -485,6 +517,8 @@ img { display: block; max-width: 100%; }
   .section { padding-block: 70px; }
 
   .nav-toggle { display: flex; }
+
+  .lang-switcher { margin-inline-start: 0; }
 
   .nav-links {
     position: fixed;
