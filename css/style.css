@@ -326,6 +326,8 @@ img { display: block; max-width: 100%; }
   color: var(--gray-700);
   margin-bottom: 1rem;
   font-size: 1.02rem;
+  text-align: justify;
+  hyphens: auto;
 }
 .about-text p:last-child { margin-bottom: 0; }
 .about-text strong { color: var(--blue-mid); }
